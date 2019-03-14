@@ -18,7 +18,7 @@ public class CharacterController2D : MonoBehaviour
 	private Rigidbody2D m_Rigidbody2D;
 
 
-    private Animator m_Animator; 
+    // private Animator m_Animator; 
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 
@@ -36,7 +36,7 @@ public class CharacterController2D : MonoBehaviour
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
-        m_Animator = GetComponent<Animator>();
+        // m_Animator = GetComponent<Animator>();
 
 
         if (OnLandEvent == null)
@@ -53,7 +53,7 @@ public class CharacterController2D : MonoBehaviour
 
         //____________
         // Change grounded parameter of animator
-        m_Animator.SetBool("grounded", false);
+        // m_Animator.SetBool("grounded", false);
         //____________
 
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
@@ -67,7 +67,7 @@ public class CharacterController2D : MonoBehaviour
 
                 //____________
                 // Change grounded parameter of animator
-                m_Animator.SetBool("grounded", true);
+                // m_Animator.SetBool("grounded", true);
                 //____________
 
                 if (!wasGrounded)
@@ -126,7 +126,7 @@ public class CharacterController2D : MonoBehaviour
 
             //____________
             // Apply move vector to animator runSpeed
-            m_Animator.SetFloat("runSpeed", Mathf.Abs(move * 10f));
+            // m_Animator.SetFloat("runSpeed", Mathf.Abs(move * 10f));
             //____________
 
             // And then smoothing it out and applying it to the character
@@ -153,7 +153,7 @@ public class CharacterController2D : MonoBehaviour
 
             //____________
             // Set bool for animator
-            m_Animator.SetBool("grounded", false);
+            // m_Animator.SetBool("grounded", false);
             //____________
 
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));

@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour {
     public CharacterController2D controller;    // Character move controller
     public float runSpeed = 20f;                // Character's run speed
 
+    public GameObject fireball;
+
     private bool jump = false;
     private float horizontalMove = 0f;
     private Animator animator; 
@@ -26,6 +28,11 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetButtonDown("Jump")) { 
             jump = true;
         }
+
+        // Checking for fireball
+        if (Input.GetButtonDown("Fire1")) {
+            Fireball();
+        }
     }
 
     void FixedUpdate () 
@@ -34,6 +41,14 @@ public class PlayerController : MonoBehaviour {
         controller.Move(horizontalMove * Time.deltaTime, false, jump);
         jump = false;
     }
+
+
+    private void Fireball() {
+        // Spawn fireball at player's location
+        GameObject projectile = Instantiate(fireball, transform.position, transform.rotation);
+        Destroy(projectile, 3f);
+    }
+
 
     // Interations with Enemeies
     private void OnCollisionEnter2D(Collision2D collision)
@@ -71,7 +86,13 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
-        StateManager.instance.endDialogue();
+        // Checking if walking away from an NPC...
+        if (collision.tag == "NPC"){
+
+            // End dialogue
+            StateManager.instance.endDialogue();
+        }
+
     }
 }
 
