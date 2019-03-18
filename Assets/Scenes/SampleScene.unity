@@ -168,7 +168,7 @@ GameObject:
   m_Layer: 0
   m_Name: Fire Imp
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -198,7 +198,7 @@ GameObject:
   m_Layer: 0
   m_Name: Duraflame
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -228,7 +228,7 @@ GameObject:
   m_Layer: 0
   m_Name: Duraflame
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -256,9 +256,9 @@ GameObject:
   m_Component:
   - component: {fileID: 395899175}
   m_Layer: 0
-  m_Name: lazers
+  m_Name: Lazers
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -629,9 +629,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-<<<<<<< HEAD
-  - first: {x: 3, y: 1, z: 0}
-=======
   - first: {x: 82, y: -5, z: 0}
     second:
       m_TileIndex: 1
@@ -651,7 +648,6 @@ Tilemap:
       m_TileFlags: 1
       m_ColliderType: 1
   - first: {x: 84, y: -5, z: 0}
->>>>>>> Fire-Level-Prototype
     second:
       m_TileIndex: 1
       m_TileSpriteIndex: 1
@@ -669,8 +665,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-<<<<<<< HEAD
-=======
   - first: {x: 86, y: -5, z: 0}
     second:
       m_TileIndex: 1
@@ -2570,16 +2564,11 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
->>>>>>> Fire-Level-Prototype
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 9cf78a28ac8f7459ca0d4fea1ad9d99f, type: 2}
-<<<<<<< HEAD
-  - m_RefCount: 18
-=======
   - m_RefCount: 231
->>>>>>> Fire-Level-Prototype
     m_Data: {fileID: 11400000, guid: 2e6dadf621baa4e6790e3c4120dded72, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -2591,12 +2580,6 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 5b025c1b739dd4d73b45125ce9464fdd, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: d8c321b39a7de4b17ad8aec6a7d3ba5e, type: 2}
-<<<<<<< HEAD
-  m_TileSpriteArray:
-  - m_RefCount: 6
-    m_Data: {fileID: 21300062, guid: c2a8e16d2ca62437b8e93d7394af258e, type: 3}
-  - m_RefCount: 18
-=======
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
@@ -2605,7 +2588,6 @@ Tilemap:
   - m_RefCount: 6
     m_Data: {fileID: 21300062, guid: c2a8e16d2ca62437b8e93d7394af258e, type: 3}
   - m_RefCount: 231
->>>>>>> Fire-Level-Prototype
     m_Data: {fileID: 21300042, guid: c2a8e16d2ca62437b8e93d7394af258e, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -2613,23 +2595,16 @@ Tilemap:
     m_Data: {fileID: 21300060, guid: c2a8e16d2ca62437b8e93d7394af258e, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 21300064, guid: c2a8e16d2ca62437b8e93d7394af258e, type: 3}
-<<<<<<< HEAD
-=======
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
->>>>>>> Fire-Level-Prototype
   - m_RefCount: 1
     m_Data: {fileID: 21300044, guid: c2a8e16d2ca62437b8e93d7394af258e, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300040, guid: c2a8e16d2ca62437b8e93d7394af258e, type: 3}
   m_TileMatrixArray:
-<<<<<<< HEAD
-  - m_RefCount: 30
-=======
   - m_RefCount: 243
->>>>>>> Fire-Level-Prototype
     m_Data:
       e00: 1
       e01: 0
@@ -2648,21 +2623,12 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-<<<<<<< HEAD
-  - m_RefCount: 30
-    m_Data: {r: 1, g: 1, b: 1, a: 1}
-  m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -10, y: -4, z: 0}
-  m_Size: {x: 18, y: 6, z: 1}
-=======
   - m_RefCount: 243
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -10, y: -7, z: 0}
   m_Size: {x: 219, y: 13, z: 1}
->>>>>>> Fire-Level-Prototype
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -2748,7 +2714,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2790,7 +2756,7 @@ GameObject:
   m_Layer: 0
   m_Name: Fire Imp
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2818,9 +2784,9 @@ GameObject:
   m_Component:
   - component: {fileID: 767677179}
   m_Layer: 0
-  m_Name: lazers
+  m_Name: Lazers
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2850,7 +2816,7 @@ GameObject:
   m_Layer: 0
   m_Name: Fire Imp
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2880,7 +2846,7 @@ GameObject:
   m_Layer: 0
   m_Name: Fire Pit
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2910,7 +2876,7 @@ GameObject:
   m_Layer: 0
   m_Name: Fire Imp
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2940,7 +2906,7 @@ GameObject:
   m_Layer: 0
   m_Name: Window
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2968,7 +2934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1204418356}
   m_Layer: 0
-  m_Name: enemies
+  m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3018,7 +2984,7 @@ GameObject:
   m_Layer: 0
   m_Name: Duraflame
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3048,7 +3014,7 @@ GameObject:
   m_Layer: 0
   m_Name: Lazers
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3078,7 +3044,7 @@ GameObject:
   m_Layer: 0
   m_Name: Duraflame
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3106,9 +3072,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1502485192}
   m_Layer: 0
-  m_Name: lazers
+  m_Name: Lazers
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3178,14 +3144,14 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -196350791
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cee036443dde54898b2d334b10abaa8e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.7615477, b: 0.5518868, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 78.11719, y: 46.874996}
+  m_DrawMode: 2
+  m_Size: {x: 1000, y: 46.874996}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3199,8 +3165,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541893176}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.27083674, y: 0.27083674, z: 0.38690963}
+  m_LocalPosition: {x: 115, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.38690963}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -3217,7 +3183,7 @@ GameObject:
   m_Layer: 0
   m_Name: Duraflame
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3247,7 +3213,7 @@ GameObject:
   m_Layer: 0
   m_Name: Fire Imp
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3277,7 +3243,7 @@ GameObject:
   m_Layer: 0
   m_Name: Fire Imp
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3307,7 +3273,7 @@ GameObject:
   m_Layer: 0
   m_Name: Fire pit
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3337,7 +3303,7 @@ GameObject:
   m_Layer: 0
   m_Name: Fire Pit
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3369,6 +3335,7 @@ GameObject:
   - component: {fileID: 2196772600896130308}
   - component: {fileID: 2196772600896130310}
   - component: {fileID: 2196772600896130309}
+  - component: {fileID: 2196772600896130305}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3376,6 +3343,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &2196772600896130305
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196772600896130304}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8008252284cd54485b08e88f41729a4a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &2196772600896130306
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3390,7 +3376,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
@@ -3413,12 +3399,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d002d74289df54fe6a81a4d3e8eee4cf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dcca06cc4b2a7477396c45b31c7456c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 13.440001, y: 12.440001}
+  m_Size: {x: 3.90625, y: 3.90625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3433,7 +3419,7 @@ Transform:
   m_GameObject: {fileID: 2196772600896130304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.06, y: -2.48, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: -1, y: 1, z: 0.2}
   m_Children:
   - {fileID: 2196772600899213366}
   - {fileID: 2196772602435364822}
@@ -3453,7 +3439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 2196772600896130311}
-  runSpeed: 60
+  runSpeed: 120
   fireball: {fileID: 2142465241340982820, guid: 516cad224ce1446d38a4643c4492c667,
     type: 3}
 --- !u!70 &2196772600896130309
@@ -3470,7 +3456,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 8.63, y: 1}
+  m_Size: {x: 3.3, y: 1}
   m_Direction: 0
 --- !u!50 &2196772600896130310
 Rigidbody2D:
@@ -3549,7 +3535,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2196772600899213365}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.3, z: 0}
+  m_LocalPosition: {x: 0, y: 1.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2196772600896130307}
@@ -3579,7 +3565,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2196772602435364821}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.66, z: 0}
+  m_LocalPosition: {x: 0, y: -2.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2196772600896130307}
