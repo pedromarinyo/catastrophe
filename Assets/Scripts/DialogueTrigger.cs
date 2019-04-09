@@ -11,7 +11,7 @@ public class DialogueTrigger : MonoBehaviour
     public void triggerDialogue(){
 
         // Send dialogue and index to StateManager
-        StateManager.instance.startDialogue(dialogue, index);
+        //StateManager.instance.startDialogue(dialogue, index);
 
         // Increase index by one or reset
         if (index < dialogue.sentences.Length - 1) {

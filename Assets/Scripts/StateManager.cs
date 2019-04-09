@@ -8,10 +8,15 @@ public class StateManager : MonoBehaviour
 {
 
     public static StateManager instance = null;
+    public PlayerController player;
+    public Transform[] spawnPoints;
+
+    private CameraController camera;
     private Canvas canvas;
     private GameObject dialogueBox;
     private Text npcName;
     private Text dialogueText;
+    private Animator animator; 
 
 
     // Initialization
@@ -34,20 +39,20 @@ public class StateManager : MonoBehaviour
 
     private void Start()
     {
-        canvas = GameObject.FindObjectOfType<Canvas>();
+        canvas = FindObjectOfType<Canvas>();
+        camera = FindObjectOfType<Camera>().GetComponent<CameraController>();
+        animator = GetComponent<Animator>();
 
         //Get reference to dialogue box; don't destroy upon load
-        dialogueBox = GameObject.Find("Dialogue Box");
-        npcName = dialogueBox.GetComponentsInChildren<Text>()[0];
-        dialogueText = dialogueBox.GetComponentsInChildren<Text>()[1];
-        dialogueBox.SetActive(false);
+        //dialogueBox = GameObject.Find("Dialogue Box");
+        //npcName = dialogueBox.GetComponentsInChildren<Text>()[0];
+        //dialogueText = dialogueBox.GetComponentsInChildren<Text>()[1];
+        //dialogueBox.SetActive(false);
 
         DontDestroyOnLoad(canvas);
+
+        startAnimation("title");
     }
-
-
-    // Custom Functions
-    // ____________________
 
     //Load specified level 
     public void loadLevel(string levelToLoad) {
@@ -60,16 +65,54 @@ public class StateManager : MonoBehaviour
     }
 
     //Start dialogue
-    public void startDialogue(Dialogue dialogue, int index) {
-        Debug.Log("Start Dialogue");
+    //public void startDialogue(Dialogue dialogue, int index) {
+    //    Debug.Log("Start Dialogue");
 
-        npcName.text = dialogue.name;
-        dialogueText.text = dialogue.sentences[index];
+    //    npcName.text = dialogue.name;
+    //    dialogueText.text = dialogue.sentences[index];
 
-        dialogueBox.SetActive(true);
+    //    dialogueBox.SetActive(true);
+    //}
+
+    //public void endDialogue() {
+    //    dialogueBox.SetActive(false);
+    //}
+
+    public void startAnimation(string name) {
+
+        // Turn on animator; stop camera follow
+        cameraEndFollow();
+        animator.enabled = true;
+
+        // Choose which animation to play
+        switch (name) {
+            case "title":
+                canvas.GetComponent<Animator>().SetTrigger("title");
+                break;
+
+            case "intro":
+                animator.SetTrigger("intro");
+                break;  
+
+            case "fireTransport":
+                // Move player to the start of the fire level 
+                movePlayer(spawnPoints[0]); 
+                break;
+
+        }
     }
 
-    public void endDialogue() {
-        dialogueBox.SetActive(false);
+    public void cameraStartFollow() {
+        animator.enabled = false;
+        camera.startFollow();
+        canvas.GetComponent<Animator>().SetTrigger("healthIntro");
+    }
+
+    public void cameraEndFollow() {
+        camera.endFollow();
+    }
+
+    public void movePlayer(Transform location) {
+        player.transform.position = location.position;
     }
 }

@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour {
     public float runSpeed = 20f;                // Character's run speed
 
     public GameObject fireball;
+    public Transform fireballBounds;
 
     private bool jump = false;
     private float horizontalMove = 0f;
@@ -45,36 +46,11 @@ public class PlayerController : MonoBehaviour {
 
     private void Fireball() {
         // Spawn fireball at player's location
-        GameObject projectile = Instantiate(fireball, transform.position, transform.rotation);
+        GameObject projectile = Instantiate(fireball, fireballBounds.position, transform.rotation);
         Destroy(projectile, 3f);
-    }
 
-
-    // Interations with Enemeies
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Collisions with obstacles
-        if (collision.gameObject.tag == "Obstacle")
-        {
-            //// Calculate direction between obstacle and player
-            //Vector2 dir = collision.contacts[0].point - new Vector2(transform.position.x, transform.position.y);
-
-            //// Reverse the calculated direction
-            //dir = -dir.normalized;
-
-            //// Calclate enemy repel force
-            //float repelForce = collision.gameObject.GetComponent<ObstacleController>().repelForce; 
-
-            //// Apply a force to the player in the calculated direction
-            //gameObject.GetComponent<Rigidbody2D>().AddForce(dir * repelForce);
-
-            //// Trigger animator into damage animation
-            ////animator.SetTrigger("damage");
-
-            // Restart level
-            StateManager.instance.restartLevel();
-
-        }    
+        // Trigger fireball player
+        animator.SetTrigger("attack");
     }
 
     // Interactions with NPCs
@@ -90,7 +66,7 @@ public class PlayerController : MonoBehaviour {
         if (collision.tag == "NPC"){
 
             // End dialogue
-            StateManager.instance.endDialogue();
+            //StateManager.instance.endDialogue();
         }
 
     }

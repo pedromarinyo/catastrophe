@@ -6,18 +6,31 @@ public class CameraController : MonoBehaviour
 {
 
     public GameObject player;
+    public bool follow = false;
+    public float smoothSpeed = 0.125f;
 
-    private Vector3 offset;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        offset = transform.position - player.transform.position;
-    }
+    public Vector3 offset;
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position + offset;
+        if (follow) 
+        {
+            Vector3 desiredPosition = player.transform.position + offset;
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+            transform.position = smoothedPosition;
+
+            //transform.LookAt(target);
+        }
+    }
+
+    // Make camera follow the player
+    public void startFollow() {
+        follow = true;
+    }
+
+    // Make camera stop following the player
+    public void endFollow() {
+        follow = false;
     }
 }

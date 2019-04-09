@@ -53,7 +53,7 @@ public class CharacterController2D : MonoBehaviour
 
         //____________
         // Change grounded parameter of animator
-        // m_Animator.SetBool("grounded", false);
+         m_Animator.SetBool("grounded", false);
         //____________
 
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
@@ -67,7 +67,7 @@ public class CharacterController2D : MonoBehaviour
 
                 //____________
                 // Change grounded parameter of animator
-                // m_Animator.SetBool("grounded", true);
+                 m_Animator.SetBool("grounded", true);
                 //____________
 
                 if (!wasGrounded)
@@ -153,7 +153,7 @@ public class CharacterController2D : MonoBehaviour
 
             //____________
             // Set bool for animator
-            // m_Animator.SetBool("grounded", false);
+             m_Animator.SetBool("grounded", false);
             //____________
 
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));

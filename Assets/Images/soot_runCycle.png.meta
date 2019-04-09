@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,18 +107,18 @@ TextureImporter:
       name: soot_runCycle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1000
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 31
+        y: 1017
+        width: 408
+        height: 441
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1ee4cfac0ac545b5aaaf250a49654cb
+      spriteID: e7b16094855594a30b56d09e3b37b63c
       vertices: []
       indices: 
       edges: []
@@ -127,18 +127,18 @@ TextureImporter:
       name: soot_runCycle_1
       rect:
         serializedVersion: 2
-        x: 500
-        y: 1000
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 531
+        y: 1017
+        width: 408
+        height: 441
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7d58409b4c874a1f8d01a0aeb980240
+      spriteID: 874f56b10ee1542b7a52c46f159a7815
       vertices: []
       indices: 
       edges: []
@@ -147,18 +147,18 @@ TextureImporter:
       name: soot_runCycle_2
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 1000
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1031
+        y: 1017
+        width: 408
+        height: 441
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 132b98592540d436c9c6bf50c6c55b99
+      spriteID: e373d6987ea144a15b1182d84cf98cbb
       vertices: []
       indices: 
       edges: []
@@ -167,18 +167,18 @@ TextureImporter:
       name: soot_runCycle_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 500
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 24
+        y: 515
+        width: 436
+        height: 418
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 201add5c2ce904a198b23dd959a4cd72
+      spriteID: 15be16d4c20134fd4a7d7a92c09a59d6
       vertices: []
       indices: 
       edges: []
@@ -187,18 +187,18 @@ TextureImporter:
       name: soot_runCycle_4
       rect:
         serializedVersion: 2
-        x: 500
-        y: 500
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 524
+        y: 515
+        width: 436
+        height: 418
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0d960af129804bbebcee9ffdd9bdab6
+      spriteID: 645a86d21ffc240ba82afc3fe7b3e98b
       vertices: []
       indices: 
       edges: []
@@ -207,18 +207,18 @@ TextureImporter:
       name: soot_runCycle_5
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 500
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1034
+        y: 517
+        width: 398
+        height: 420
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8db084184e4a24fb7bc740e0e674ab65
+      spriteID: 39908cae13d594e36b5d6e00f1ddcc9d
       vertices: []
       indices: 
       edges: []
@@ -227,18 +227,18 @@ TextureImporter:
       name: soot_runCycle_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 34
+        y: 17
+        width: 398
+        height: 420
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 239bd9917cc5842a2bfa00f0560c8994
+      spriteID: 89e2d3d21ac4b4aefa87b8122a009b63
       vertices: []
       indices: 
       edges: []
@@ -247,18 +247,18 @@ TextureImporter:
       name: soot_runCycle_7
       rect:
         serializedVersion: 2
-        x: 500
-        y: 0
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 526
+        y: 16
+        width: 409
+        height: 414
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 624c7a692b4a74b8dae61454e341fb44
+      spriteID: 644bddc0ba8744b348122e8611e11a84
       vertices: []
       indices: 
       edges: []
